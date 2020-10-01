@@ -9,7 +9,10 @@ class LinkedList(object):
     def __init__(self):
         self.head = None
         self.size = 0
-		
+    def insetbegin(self,data):
+	newNode = Node(data)
+	newNode.next = self.head
+	self.head = newNode
     def insertEnd(self,data):
         self.size=self.size+1
         newNode=Node(data)
